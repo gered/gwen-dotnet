@@ -32,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Drawing" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -153,5 +152,8 @@
     <Compile Include="Skin\TexturedBase.cs" />
     <Compile Include="Skin\Texturing\Bordered.cs" />
     <Compile Include="Skin\Texturing\Single.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Color.cs" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Drawing;
+//using System.Drawing;
 using System.IO;
 using Gwen.Skin.Texturing;
 using Single = Gwen.Skin.Texturing.Single;

@@ -85,12 +85,12 @@ namespace Gwen.Control.Property
             get { return m_TextBox == InputHandler.KeyboardFocus; }
         }
 
-        private void SetTextFromColor(System.Drawing.Color color)
+        private void SetTextFromColor(Gwen.Color color)
         {
             m_TextBox.Text = String.Format("{0} {1} {2}", color.R, color.G, color.B);
         }
 
-        private System.Drawing.Color GetColorFromText()
+        private Gwen.Color GetColorFromText()
         {
             String[] split = m_TextBox.Text.Split(' ');
 
@@ -114,7 +114,7 @@ namespace Gwen.Control.Property
                 Byte.TryParse(split[2], out blue);
             }
 
-            return System.Drawing.Color.FromArgb(alpha, red, green, blue);
+            return Gwen.Color.FromArgb(alpha, red, green, blue);
         }
 
         protected override void DoChanged()
