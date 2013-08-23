@@ -2,7 +2,6 @@ using System;
 
 namespace Gwen
 {
-	[Serializable]
 	public struct Color
 	{
 		public byte A;

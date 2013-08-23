@@ -7,6 +7,7 @@ using System.Linq;
 using Gwen.Anim;
 using Gwen.DragDrop;
 using Gwen.Input;
+using Gwen.Extensions;
 
 namespace Gwen.Control
 {

@@ -5,10 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D3F5E624-3AF2-418F-A180-8A4172928065}</ProjectGuid>
+    <ProjectGuid>{BA49D193-A334-4D34-8835-510654776102}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>Gwen</RootNamespace>
     <AssemblyName>Gwen</AssemblyName>
+    <TargetFrameworkProfile>Profile14</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -19,32 +22,33 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <GenerateDocumentation>true</GenerateDocumentation>
-    <NoWarn>1591</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>none</DebugType>
+    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <GenerateDocumentation>true</GenerateDocumentation>
-    <NoWarn>1591</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Align.cs" />
+    <Compile Include="Color.cs" />
     <Compile Include="Font.cs" />
     <Compile Include="HSV.cs" />
     <Compile Include="Key.cs" />
     <Compile Include="Margin.cs" />
     <Compile Include="Padding.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Pos.cs" />
+    <Compile Include="Rectangle.cs" />
     <Compile Include="Texture.cs" />
     <Compile Include="ToolTip.cs" />
     <Compile Include="Util.cs" />
@@ -145,8 +149,6 @@
     <Compile Include="Input\InputHandler.cs" />
     <Compile Include="Input\KeyData.cs" />
     <Compile Include="Platform\Neutral.cs" />
-    <Compile Include="Platform\Windows.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderer\Base.cs" />
     <Compile Include="Renderer\ICacheToTexture.cs" />
     <Compile Include="Skin\Base.cs" />
@@ -155,8 +157,10 @@
     <Compile Include="Skin\TexturedBase.cs" />
     <Compile Include="Skin\Texturing\Bordered.cs" />
     <Compile Include="Skin\Texturing\Single.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="Point.cs" />
-    <Compile Include="Color.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Extensions\" />
   </ItemGroup>
 </Project>

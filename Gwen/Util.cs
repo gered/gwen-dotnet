@@ -11,7 +11,12 @@ namespace Gwen
     {
         public static int Round(float x)
         {
-            return (int)Math.Round(x, MidpointRounding.AwayFromZero);
+            //return (int)Math.Round(x, MidpointRounding.AwayFromZero);
+			if (x > 0)
+				return (int)Math.Floor(x + 0.5);
+			else
+				return (int)Math.Ceiling(x - 0.5);
+
         }
         /*
         public static int Trunc(float x)

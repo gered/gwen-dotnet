@@ -2,7 +2,6 @@ using System;
 
 namespace Gwen
 {
-	[Serializable]
 	public struct Point
 	{
 		public int X;

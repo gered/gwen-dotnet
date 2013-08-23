@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gwen", "Gwen\Gwen.csproj", "{D3F5E624-3AF2-418F-A180-8A4172928065}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gwen", "Gwen\Gwen.csproj", "{BA49D193-A334-4D34-8835-510654776102}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D3F5E624-3AF2-418F-A180-8A4172928065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3F5E624-3AF2-418F-A180-8A4172928065}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3F5E624-3AF2-418F-A180-8A4172928065}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3F5E624-3AF2-418F-A180-8A4172928065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA49D193-A334-4D34-8835-510654776102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA49D193-A334-4D34-8835-510654776102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA49D193-A334-4D34-8835-510654776102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA49D193-A334-4D34-8835-510654776102}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Gwen\Gwen.csproj

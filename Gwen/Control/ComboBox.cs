@@ -1,6 +1,7 @@
 ﻿using System;
 //using System.Drawing;
 using Gwen.ControlInternal;
+using Gwen.Extensions;
 
 namespace Gwen.Control
 {
