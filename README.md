@@ -7,7 +7,7 @@ library of GwenCS has been changed to build as a Portable Class Library.
 
 The most significant change in this fork is the removal of all the specific
 renderer implementations. This fork is *primarily* developed for my own use with 
-[my own code]() who's renderer probably wouldn't benefit anyone else. However,
+[my own code](https://github.com/gered/Blarg.GameFramework) who's renderer probably wouldn't benefit anyone else. However,
 it probably wouldn't be too much work to convert Gwen.Renderer.OpenTK to work
 with this fork and Android/iOS.
 
