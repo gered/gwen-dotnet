@@ -1,2 +1,9 @@
-GwenCS.userprefs
-Gwen/bin
+.DS_Store
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
