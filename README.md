@@ -2,17 +2,20 @@
 
 This is a fork of the original [gwen-dotnet](https://code.google.com/p/gwen-dotnet/) project which has been slightly
 modified to remove OS dependancies (specifically, usage of various Windows
-APIs) to simplify using Gwen with Xamarin.Android and Xamarin.iOS.
+APIs) to simplify using Gwen with Xamarin.Android and Xamarin.iOS. The core
+library of GwenCS has been changed to build as a Portable Class Library.
 
-Ultimately, this means that things such as the file save/open dialog support
-are not implemented and those methods instead simply do nothing. As well,
-the cursor support (changing the cursor to, for example, a resize icon when
-the mouse is positioned at the edge of a resizable control) has also been
-stubbed out and will not work.
+The most significant change in this fork is the removal of all the specific
+renderer implementations. This fork is *primarily* developed for my own use with 
+[my own code]() who's renderer probably wouldn't benefit anyone else. However,
+it probably wouldn't be too much work to convert Gwen.Renderer.OpenTK to work
+with this fork and Android/iOS.
 
-As well, the dependancy on System.Drawing has been removed with equivalent
-structs to Color, Rectangle, etc being re-implemented with very light-weight
-equivalents.
+Other significant changes include the removal of any platform-specific code
+that was present in GwenCS. This includes things such as the file save/open
+dialog support, cursor changing, and the System.Drawing dependancy. Very
+light-weight equivalents to Color, Rectangle, etc. have been added to 
+fill in the gaps.
 
 ## TODO
 
